@@ -23,11 +23,11 @@ Containerization of Multi-Tier Java Application using Docker.
   - Reusable and repeatable.
 
 ### Prerequisite:
-  1. Oracle VM Virtualbox
-  2. Vagrant
-  3. Git bash or equivalent editor
-  4. Visual studio
-  5. Dockerhub account
+  1. Oracle VM Virtualbox.
+  2. Vagrant.
+  3. Git bash or equivalent editor.
+  4. Visual studio.
+  5. Dockerhub account.
 
   Note - I have used Vagrant VM instead of EC2. It's up to you to choose any of them.
 
@@ -43,7 +43,7 @@ Containerization of Multi-Tier Java Application using Docker.
 ### Detailed Steps:
   #### Setting up VM:
   - Create a new folder on your local computer.
-  - Copy the Ubuntu 22 vagrant box from -![Vagrant Cloud](https://app.vagrantup.com/boxes/search).
+  - Copy the Ubuntu 22 vagrant box from -[Vagrant Cloud](https://app.vagrantup.com/boxes/search).
   - Open git bash and get into the created folder.
   - Initialize vagrant VM. $`vagrant init bento/ubuntu-22.04`
   - Edit Vagrant file. $`vim Vagrantfile`
@@ -53,7 +53,7 @@ Containerization of Multi-Tier Java Application using Docker.
     
   - Bring up VM. $`vagrant up`
   - Login to VM. $`vagrant ssh` (Password='vagrant' if asked)
-  - Switch to root user and install docker engine on ubuntu from official documentation - ![Docker](https://docs.docker.com/engine/install/ubuntu/)
+  - Switch to root user and install docker engine on ubuntu from official documentation - [Docker](https://docs.docker.com/engine/install/ubuntu/).
   - Add vagrant user to docker group to run docker commands without sudo privileges. $`usermod -aG docker vagrant`
   - Exit from VM and login again and verify docker commands running for vagrant user.
     ![Docker](https://github.com/MadhuShetty1499/4.Containerize_WebApp_Docker/blob/main/images/docker.png)
@@ -69,8 +69,8 @@ Containerization of Multi-Tier Java Application using Docker.
   - Go to VS code => open cloned repo folder => dockerfiles => db => open Dockerfile => write the docker file as in [DB](https://github.com/MadhuShetty1499/4.Containerize_WebApp_Docker/blob/main/dockerfiles/db/Dockerfile)
 
   #### Dockerfile for Web image:
-  - Go to VS code => open cloned repo folder => dockerfiles => web => open Dockerfile => write the docker file as in [Web](https://github.com/MadhuShetty1499/4.Containerize_WebApp_Docker/blob/main/dockerfiles/web/Dockerfile)
-  - Also create custom configuration file (nginvproapp.conf) for nginx alongside it's Dockerfile as in [Configuration](https://github.com/MadhuShetty1499/4.Containerize_WebApp_Docker/blob/main/dockerfiles/web/nginvproapp.conf)
+  - Go to VS code => open cloned repo folder => dockerfiles => web => open Dockerfile => write the docker file as in [Web].(https://github.com/MadhuShetty1499/4.Containerize_WebApp_Docker/blob/main/dockerfiles/web/Dockerfile)
+  - Also create custom configuration file (nginvproapp.conf) for nginx alongside it's Dockerfile as in [Configuration](https://github.com/MadhuShetty1499/4.Containerize_WebApp_Docker/blob/main/dockerfiles/web/nginvproapp.conf).
 
   #### Docker compose:
   - Go to VS code => open cloned repo folder => create docker-compose.yml file => write the docker file as in [Docker-compose](https://github.com/MadhuShetty1499/4.Containerize_WebApp_Docker/blob/main/docker-compose.yml)
@@ -84,7 +84,7 @@ Containerization of Multi-Tier Java Application using Docker.
 
   #### Validation
   - Copy the private Ip of VM which was set initially and paste it into the browser.
-  - Login as admin_vp (username and password both) check the services
+  - Login as admin_vp (username and password both) and check the services.
     ![WebApp](https://github.com/MadhuShetty1499/4.Containerize_WebApp_Docker/blob/main/images/login.png)
 
   #### Cleanup
