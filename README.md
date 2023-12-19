@@ -1,5 +1,5 @@
 # Project-4: Containerize_WebApp_Docker
-Containerization of Multi-Tier Java Application using Docker.
+My focus is on transforming a multi-tier Java application, currently running on traditional VMs with frequent deployments and resource inefficiencies, into a streamlined, agile, and cost-effective solution. By leveraging Docker containerization, I aim to mitigate high CapEx and OpEx, eliminate human errors in deployments, and enhance compatibility with a microservices architecture. This approach ensures lower resource consumption, deployment consistency via images, and improved portability across environments. Through Docker's containerization, my solution promises reusable, efficient, and repeatable deployment processes, revolutionizing the application's scalability and operational efficiency.
 
 ### Scenario:
   - Multi-Tier Application stack.
